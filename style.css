@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f8f7f2;
+    color: #292d25;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-header {
+    height: 85px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e7e5dc;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #8b936d;
+}
+
+.main-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.main-nav a,
+.cart {
+    font-size: 14px;
+}
+
+.main-nav a:hover,
+.cart:hover {
+    color: #858e66;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    grid-template-areas: "copy art";
+    min-height: 560px;
+    padding: 55px 8%;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-copy {
+    grid-area: copy;
+}
+
+.hero-art {
+    grid-area: art;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.hero-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eyebrow {
+    color: #858e66;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    line-height: 1.15;
+    font-weight: 500;
+    max-width: 480px;
+}
+
+.hero h1 em {
+    color: #858e66;
+}
+
+.hero-description {
+    color: #77796f;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 400px;
+    margin: 25px 0 30px;
+}
+
+.primary-button,
+.light-button {
+    display: inline-block;
+    background: #596447;
+    color: white;
+    padding: 15px 25px;
+    font-size: 13px;
+    transition: background 0.3s;
+}
+
+.primary-button:hover {
+    background: #3e4932;
+}
+
+.products {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 35px;
+}
+
+.section-heading h2,
+.promo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.text-link {
+    font-size: 13px;
+    border-bottom: 1px solid #596447;
+    padding-bottom: 5px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.product-card p {
+    font-size: 12px;
+    color: #85857d;
+    margin: 8px 0 15px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.product-bottom button {
+    border: 1px solid #596447;
+    background: transparent;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #596447;
+}
+
+.product-bottom button:hover {
+    background: #596447;
+    color: white;
+}
+
+.promo {
+    background: #596447;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.promo .eyebrow {
+    color: #d4d9c5;
+}
+
+.promo h2 {
+    margin-bottom: 15px;
+}
+
+.promo p:not(.eyebrow) {
+    color: #e1e3d9;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.light-button {
+    background: #f8f7f2;
+    color: #46513a;
+}
+
+.light-button:hover {
+    background: #e7e5dc;
+}
+
+.site-footer {
+    padding: 55px 8% 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand p {
+    color: #85857d;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 13px;
+}
+
+.footer-links h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #77796f;
+}
+
+.footer-links a:hover {
+    color: #596447;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    border-top: 1px solid #e7e5dc;
+    padding-top: 20px;
+    color: #92938a;
+    font-size: 11px;
+}
